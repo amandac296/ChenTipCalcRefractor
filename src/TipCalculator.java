@@ -6,7 +6,7 @@ public class TipCalculator {
     double totalBillBeforeTip;
 
     //constructor
-    public tip(int numPeople, int tipPercentage) {
+    public TipCalculator(int numPeople, int tipPercentage) {
         this.numPeople = numPeople;
         this.tipPercentage = tipPercentage;
         totalBillBeforeTip = 0.0;
@@ -24,18 +24,14 @@ public class TipCalculator {
     }
 
     //add meal
-    public double addMeal(double cost) {
-        return totalBillBeforeTip = cost + totalBillBeforeTip;
-        double cost = 0;
-        double cost1 = 0;
-        double totalCost = 0;
-        totalBillBeforeTip = cost + cost1;
-        cost1 = totalBillBeforeTip;
+    public void addMeal(double cost) {
+        totalBillBeforeTip = cost + totalBillBeforeTip;
+        totalBillBeforeTip = totalBillBeforeTip;
     }
 
     //total tip
     public double tipAmount() {
-        return totalBillBeforeTip * tipPercentage;
+        return totalBillBeforeTip * (tipPercentage/100.0);
     }
 
     //total bill
@@ -65,4 +61,3 @@ public class TipCalculator {
 
 
 
-}
